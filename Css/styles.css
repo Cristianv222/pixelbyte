@@ -45,6 +45,7 @@ header{
     align-items: center;
     position: relative;
     z-index: 1;
+    margin: 15px;
 }
 
 .logo img{
@@ -166,7 +167,7 @@ header{
 }
 
 .image__cover img{
-    width: 550px;
+    width: 300px;
 }
 
 
@@ -266,13 +267,13 @@ header{
 }
 
 
-.image__about{
+.imagen_seccion3{
     width: 100%;
     display: flex;
 }
 
-.image__about img{
-    width: 300px;
+.imagen_seccion3 img{
+    width: 600px;
 }
 
 /*Servicios*/
