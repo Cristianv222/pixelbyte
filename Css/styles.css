@@ -22,6 +22,9 @@
     --text_paragraph: 16px;
     --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
 }
+body{
+    background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+}
 
 header{
     width: 100%;
