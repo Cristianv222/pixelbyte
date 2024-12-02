@@ -152,6 +152,9 @@ $conn->close();
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="../conexiones/galeria.php">Galeria</a></li>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./conexiones/inicio_secion.php">Galeria</a></li>
+
                     </ul>
                 </nav>
                 <div class="socialMedia">

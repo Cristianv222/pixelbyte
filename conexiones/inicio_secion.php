@@ -20,11 +20,12 @@ $error = ""; // Variable para manejar mensajes de error
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
-
+}
     // Validar si los campos están vacíos
     if (empty($username) || empty($password)) {
         $error = "Por favor, completa todos los campos.";
-    } else {
+    } 
+    else {
         try {
             // Consultar la base de datos para verificar el username
             $sql = "SELECT id, password FROM users WHERE username = :username";
@@ -49,6 +50,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } catch (PDOException $e) {
             $error = "Error en el servidor: " . $e->getMessage();
         }
+    }
+session_start(); // Inicia la sesión
+// Conexión a la base de datos
+$conn = new mysqli("localhost", "root", "", "proyecto");
+
+// Verificar conexión
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+// Procesar el formulario
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Consulta para verificar usuario
+    $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        // Verificar la contraseña
+        if (password_verify($password, $user['password'])) {
+            $_SESSION['user_id'] = $user['id']; // Guardar ID en sesión
+            $_SESSION['username'] = $user['username'];
+            header("Location: ../galeria.html"); // Redirigir a la galería
+            exit;
+        } else {
+            echo "<p>Contraseña incorrecta.</p>";
+        }
+    } else {
+        echo "<p>Usuario no encontrado.</p>";
     }
 }
 ?>
