@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelByte - Portfolio</title>
     <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        * {
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: "Jersey 25", serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         body {
@@ -31,7 +36,7 @@
         }
 
         .navbar.scrolled {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(59, 59, 59, 0.24);
             backdrop-filter: blur(10px);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
@@ -46,9 +51,9 @@
         }
 
         .logo {
-            color: #3b82f6;
-            font-size: 1.5rem;
-            font-weight: bold;
+            color:rgb(116, 119, 122);
+            font-size: 50px;
+            font-weight: 400px;
             text-decoration: none;
         }
 
@@ -57,7 +62,7 @@
             background: none;
             border: none;
             color: white;
-            font-size: 1.5rem;
+            font-size: 30px;
             cursor: pointer;
         }
 
@@ -108,7 +113,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: #9333ea;
+            background:rgba(77, 24, 129, 0);
             border-radius: 50%;
             opacity: 0.5;
         }
@@ -262,14 +267,14 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">PixelByte</a>
+            <a href="/index.php" class="logo">PixelByte</a>
             <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
                 <li><a href="#home">HOGAR</a></li>
                 <li><a href="#servicios">SERVICIOS</a></li>
-                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#habilidades">NOSOTROS</a></li>
                 <li><a href="#educacion">EDUCACIÓN</a></li>
                 <li><a href="#experiencia">EXPERIENCIA</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
@@ -280,7 +285,7 @@
     <main class="main-content">
         <div class="profile-container">
             <div class="profile-image">
-                <img src="../images/pixelbyte_logo.jpeg" alt="Profile picture">
+                <img src="../images/pixel.png" alt="">
             </div>
             <div class="content-section">
                 <h1 class="title">Hola, esto es <span class="highlight">PIXELBYTE</span></h1>
@@ -296,10 +301,10 @@
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-                <button class="cta-button">Más sobre nosotros</button>
+                <button class="cta-button">Whatsapp</button>
             </div>
         </div>
     </main>
