@@ -1,3 +1,4 @@
+<?php include './preloader.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-    <title>Pixelbyte</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" sizes="16x16">
+    <title>PixelByte</title>
 
     <link rel="stylesheet" href="./Css/styles.css">
 
@@ -18,7 +20,6 @@
 <?php include_once './includes/menu.php'; ?>
 
         <!--Generador de confianza-->
-
         <div class="container__trust container__card-primary">
             <div class="trust card__primary">
                 <div class="text__trust text__card-primary">
@@ -43,30 +44,11 @@
                 </div>
             </div>
         </div>
-
-        <!--Sobre nosotros - Nuestro equipo-->
-
-        <div class="container__about div__offset">
-            <div class="about">
-                <div class="text__about">
-                    <h1>El equipo creativo más innovador</h1>
-                    <p>Trabajando juntos lograremos grandes metas.</p>
-                    <a href="#" class="btn__text-about btn__text">Saber Más</a>
-                </div>
-                
-                <div class="imagen_seccion3">
-                    <img src="./images/Programacion-Web-.png" alt="">
-                </div>
-            </div>
-            
-        </div>
-
         <!--SERVICIOS-->
 
         <div class="container__service container__card-primary div__offset">
             <div class="service card__primary">
                 <div class="text__service text__card-primary">
-                    <p>QUE HACEMOS</p>
                     <h1>Ofrecemos varios servicios como:</h1>
                 </div>
 
@@ -124,6 +106,7 @@
         </div>
 
     </main>
+    <?php include_once './includes/footer.php'; ?>
     
 </body>
 </html>

@@ -24,6 +24,18 @@
             color: #f5f5f5;
             min-height: 100vh;
         }
+        .hero-section {
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/el-proceso-de-desarrollo-web.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        color: white;
+}
 
         /* Navegación */
         .navbar {
@@ -84,7 +96,7 @@
         }
 
         /* Contenido Principal */
-        .main-content {
+        .main-content-card {
             padding-top: 5rem;
             min-height: 100vh;
             display: flex;
@@ -262,6 +274,8 @@
                 font-size: 1.5rem;
             }
         }
+
+        
     </style>
 </head>
 <body>
@@ -275,14 +289,13 @@
                 <li><a href="#home">HOGAR</a></li>
                 <li><a href="#servicios">SERVICIOS</a></li>
                 <li><a href="#habilidades">NOSOTROS</a></li>
-                <li><a href="#educacion">EDUCACIÓN</a></li>
                 <li><a href="#experiencia">EXPERIENCIA</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </div>
     </nav>
-
-    <main class="main-content">
+    <div class="hero-section">
+    <main class="main-content-card">
         <div class="profile-container">
             <div class="profile-image">
                 <img src="../images/pixel.png" alt="">
@@ -294,12 +307,10 @@
                     <h2 class="typewriter highlight" id="changing-text"></h2>
                 </div>
                 <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore dolores esse. 
-                    Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae 
-                    debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.
+                    Una empresa dedicada al desarrollo web, desarrollo de aplicaciones web y móviles, diseño de interfaces y experiencia de usuario.
                 </p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -308,6 +319,7 @@
             </div>
         </div>
     </main>
+    </div>
 
     <script>
         // Manejo del menú responsivo
@@ -334,7 +346,6 @@
             "diseñadores web",
             "expertos en React",
             "desarrolladores JavaScript",
-            "diseñadores UI/UX",
             "desarrolladores full stack",
             "especialistas en CSS",
             "creadores de experiencias web"
