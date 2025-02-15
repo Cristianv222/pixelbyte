@@ -161,15 +161,16 @@
             </form>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Cristianv222"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/message/2W6IZ65KTSE3F1?fbclid=PAZXh0bgNhZW0CMTEAAaZO31o16vBkQrxqvuY1hX18hCN6_Cn8UriMuW0S1WssAH9H5vDD70pJKTw_aem__lAaNIzpKkm9C1f-HwMTTA"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/pixelbyteec?igsh=MXdqODhxeHkxamZweg=="><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
 
     <div class="footer-bottom">
-        <p>PixelByte © 2025 - All Rights Reserved</p>
+        <p>PixelByte © 2025 - Todos los derechos reservados
+        </p>
     </div>
 </footer>
 
